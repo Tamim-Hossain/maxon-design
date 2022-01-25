@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Roboto:400,500,700&display=swap");
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+}
+.heading-text {
+	font-size: 60px;
+	color: #112e41;
+}
+.main-heading {
+	font-size: 42px;
+	color: #112e41;
+}
+.fun-sec {
+	background: #112e41;
+}
+@media screen and (max-width: 767px) {
+	.tesimonial .video-box {
+		margin-bottom: 40px;
+	}
+}
+
+.test-caro {
+	max-width: 710px;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.test-caro {
+		padding-left: 60px;
+	}
+}
+
+.test-caro .single-test p {
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 0;
+}
+
+.test-caro .single-test .company-logo {
+	margin-top: 40px;
+	max-width: 119px;
+}
+
+.test-caro .avatar {
+	max-width: 160px;
+	height: 160px;
+	margin-bottom: 40px;
+}
+.video-box {
+	position: relative;
+}
+
+.video-box:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(22, 43, 69, 0.7);
+}
+
+.video-box .video-in {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 100%;
+	z-index: 1;
+}
+
+.video-box .video-in span {
+	color: #fff;
+}
+
+.video-btn {
+	background-color: #ff7214;
+	color: #fff;
+	display: block;
+	font-size: 18px;
+	text-align: center;
+	margin: 0 auto 15px;
+	position: relative;
+	line-height: 65px;
+	height: 60px;
+	width: 60px;
+}
+
+.video-btn::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-animation: beat infinite 1.2s;
+	animation: beat infinite 1.2s;
+	height: 100%;
+	width: 100%;
+	background-color: #ff7214;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.video-btn:hover {
+	color: #233646;
+}
+
+@-webkit-keyframes beat {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+}
+
+@keyframes beat {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+}
+.read-more {
+	color: #233646;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	display: block;
+}
+
+.read-more img {
+	width: 31px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.read-more:hover {
+	color: #ff7214;
+}
